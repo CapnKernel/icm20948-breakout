@@ -27,3 +27,10 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+/*-cache.lib
+/__pycache__/*.pyc
+/output/*.pdf
+/output/ozhelm-gerbers-*.zip
+/venv/
+/jlcpcb/
+/scripts/__pycache__/*.pyc
