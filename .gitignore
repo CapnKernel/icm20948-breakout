@@ -34,3 +34,4 @@ fp-info-cache
 /venv/
 /jlcpcb/
 /scripts/__pycache__/*.pyc
+/output
