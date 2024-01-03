@@ -5,15 +5,13 @@
 	(uuid "4dfd0be2-e8c5-4632-8fac-7d9f40f8a401")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:R"
-			(pin_numbers hide)
+		(symbol "Device:R_Pack04_Split"
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "R"
+			(property "Reference" "RN"
 				(at 2.032 0 90)
 				(effects
 					(font
@@ -21,7 +19,7 @@
 					)
 				)
 			)
-			(property "Value" "R"
+			(property "Value" "R_Pack04_Split"
 				(at 0 0 90)
 				(effects
 					(font
@@ -30,7 +28,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at -2.032 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -47,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "4 resistor network, parallel topology, split"
 				(at 0 0 0)
 				(effects
 					(font
@@ -56,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "R network parallel topology isolated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -65,7 +63,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,10 +72,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_0_1"
+			(symbol "R_Pack04_Split_0_1"
 				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -87,11 +85,11 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "R_Pack04_Split_1_1"
 				(pin passive line
-					(at 0 3.81 270)
+					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name "R1.1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -107,9 +105,29 @@
 					)
 				)
 				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Pack04_Split_2_1"
+				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name "R2.1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -117,6 +135,100 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Pack04_Split_3_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R3.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R3.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Pack04_Split_4_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R4.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R4.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -541,7 +653,7 @@
 				)
 			)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+3V3"
 			(power)
 			(pin_names
 				(offset 0)
@@ -558,7 +670,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+3V3"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -584,7 +696,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -602,7 +714,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -640,11 +752,11 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0) hide
-					(name "+3.3V"
+					(name "+3V3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -698,7 +810,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 86.36) (xy 153.67 80.01)
+			(xy 153.67 78.74) (xy 153.67 86.36)
 		)
 		(stroke
 			(width 0)
@@ -718,13 +830,13 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 69.85) (xy 137.16 78.74)
+			(xy 153.67 69.85) (xy 153.67 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3085f7ea-3181-46ee-b7f1-dccafdc69cd5")
+		(uuid "28313e6d-9216-4dc7-b3c7-cef78e5fa4ef")
 	)
 	(wire
 		(pts
@@ -738,23 +850,33 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 69.85) (xy 116.84 72.39)
+			(xy 110.49 78.74) (xy 110.49 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3a816f7d-271c-436d-ab1a-2a6511806b78")
+		(uuid "34eee233-c87b-472f-b442-851995abd6fd")
 	)
 	(wire
 		(pts
-			(xy 146.05 69.85) (xy 146.05 72.39)
+			(xy 116.84 78.74) (xy 116.84 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41b0a0fa-c995-4b6f-9ff3-5e5644778904")
+		(uuid "39f5e79e-7799-4fb8-bc89-ad2bd38e0fe7")
+	)
+	(wire
+		(pts
+			(xy 146.05 69.85) (xy 146.05 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e9b8158-dbdf-4727-ab3c-c9d9b6b027c5")
 	)
 	(wire
 		(pts
@@ -768,7 +890,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 96.52) (xy 146.05 80.01)
+			(xy 110.49 69.85) (xy 110.49 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49faadb8-79b0-4834-b7f9-dcb1aab07d6f")
+	)
+	(wire
+		(pts
+			(xy 146.05 78.74) (xy 146.05 96.52)
 		)
 		(stroke
 			(width 0)
@@ -798,16 +930,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 80.01) (xy 116.84 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "862b73af-f05b-4ca7-ab30-5b323a46b147")
-	)
-	(wire
-		(pts
 			(xy 153.67 86.36) (xy 161.29 86.36)
 		)
 		(stroke
@@ -828,23 +950,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 69.85) (xy 110.49 72.39)
+			(xy 116.84 69.85) (xy 116.84 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b6eefdc7-ec12-403a-8855-c86db3c15abf")
-	)
-	(wire
-		(pts
-			(xy 153.67 69.85) (xy 153.67 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb4a8c3b-f525-4e87-924b-f8a22489cdf9")
+		(uuid "bb53936c-fbe8-43fe-9886-ed1134e98389")
 	)
 	(wire
 		(pts
@@ -858,13 +970,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 80.01) (xy 110.49 96.52)
+			(xy 137.16 69.85) (xy 137.16 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fbf0759a-3692-4c74-a711-51de5fb0582d")
+		(uuid "ebfe5bbb-65b6-4af5-9e4b-c2b1ead2a573")
 	)
 	(text "Sparkfun: 20V/0.2A/8MHz/1Vth"
 		(exclude_from_sim no)
@@ -923,6 +1035,72 @@
 			(justify left)
 		)
 		(uuid "b3ffd05b-0745-4039-866e-2ead59abf46f")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 110.49 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "002be050-e4a9-4f5b-b193-d7fdab212af4")
+		(property "Reference" "#PWR014"
+			(at 110.49 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 110.49 65.7169 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 110.49 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57b08099-c6d0-4eab-8f59-6026b3fb263a")
+		)
+		(instances
+			(project "icm20948-breakout"
+				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+1V8")
@@ -991,77 +1169,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 110.49 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d314aa1-856c-48c2-b218-958f1fbf91f2")
-		(property "Reference" "R1"
-			(at 112.268 74.9878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 112.268 77.4121 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 108.712 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 110.49 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7e98f31d-8d78-46e3-b3db-c8f637a60f35")
-		)
-		(pin "1"
-			(uuid "8f45e173-6684-4213-bcb9-cabd82e432be")
-		)
-		(instances
-			(project "icm20948-breakout"
-				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+3V3")
 		(at 116.84 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1069,8 +1177,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "31c12d1a-55c4-4dae-a765-1a0056e84d45")
-		(property "Reference" "#PWR09"
+		(uuid "15517d38-e3bc-4ff7-8bce-b754b4e1575b")
+		(property "Reference" "#PWR08"
 			(at 116.84 73.66 0)
 			(effects
 				(font
@@ -1079,7 +1187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+3V3"
 			(at 116.84 65.7169 0)
 			(effects
 				(font
@@ -1105,7 +1213,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 116.84 69.85 0)
 			(effects
 				(font
@@ -1115,13 +1223,118 @@
 			)
 		)
 		(pin "1"
-			(uuid "500b418e-dec3-4fa3-99eb-3da990baa63b")
+			(uuid "b625ac97-5a52-4b6e-991c-7ac69993757b")
 		)
 		(instances
 			(project "icm20948-breakout"
 				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
-					(reference "#PWR09")
+					(reference "#PWR08")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 116.84 74.93 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ac690bf-f071-4ea4-9fa7-47e3e95a906b")
+		(property "Reference" "RN1"
+			(at 118.618 73.7178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 118.618 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 114.808 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C29718"
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 116.84 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3205e3dc-0ec7-4415-8a9f-d8b99508bf3f")
+		)
+		(pin "8"
+			(uuid "d7960139-1795-42e4-8be7-72fc2cad483c")
+		)
+		(pin "5"
+			(uuid "a2f8052b-3284-4ec8-b940-36bcb9ddba88")
+		)
+		(pin "4"
+			(uuid "b6613d6c-fd77-421c-834a-5d587c9179a9")
+		)
+		(pin "2"
+			(uuid "1e1922c1-65eb-4370-a6b8-1bf1b53c1fd1")
+		)
+		(pin "1"
+			(uuid "42f062fe-038b-46ea-862c-0165f5c39bb6")
+		)
+		(pin "7"
+			(uuid "49dd0388-373d-4a86-909b-c58084e754fa")
+		)
+		(pin "6"
+			(uuid "9744ed5b-dca7-46c8-b4d6-755d46804ab1")
+		)
+		(instances
+			(project "icm20948-breakout"
+				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
+					(reference "RN1")
+					(unit 4)
 				)
 			)
 		)
@@ -1187,72 +1400,6 @@
 			(project "icm20948-breakout"
 				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 110.49 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e4d5679-c2ec-4f83-a088-7c810ea25b08")
-		(property "Reference" "#PWR08"
-			(at 110.49 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 110.49 65.7169 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 110.49 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7cab7ace-2950-42b3-b722-14157b02166e")
-		)
-		(instances
-			(project "icm20948-breakout"
-				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -1325,35 +1472,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 116.84 76.2 0)
+		(lib_id "Device:R_Pack04_Split")
+		(at 153.67 74.93 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bbcded19-1d36-4303-9ca7-c14b069cbc66")
-		(property "Reference" "R2"
-			(at 118.618 74.9878 0)
+		(uuid "8c3ae66b-98be-4374-b16a-551618280ef4")
+		(property "Reference" "RN1"
+			(at 155.448 73.7178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 118.618 77.4121 0)
+		(property "Value" "10k"
+			(at 155.448 76.1421 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 115.062 76.2 90)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 155.702 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1362,7 +1509,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 76.2 0)
+			(at 153.67 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1370,42 +1517,77 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 116.84 76.2 0)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 153.67 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "LCSC" "C29718"
+			(at 153.67 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 153.67 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3205e3dc-0ec7-4415-8a9f-d8b99508bf3f")
+		)
+		(pin "8"
+			(uuid "d7960139-1795-42e4-8be7-72fc2cad483c")
+		)
+		(pin "5"
+			(uuid "a2f8052b-3284-4ec8-b940-36bcb9ddba88")
+		)
+		(pin "4"
+			(uuid "b6613d6c-fd77-421c-834a-5d587c9179a9")
 		)
 		(pin "2"
-			(uuid "1209ac49-11b4-4db0-901e-eb6f3cc985c1")
+			(uuid "1e1922c1-65eb-4370-a6b8-1bf1b53c1fd1")
 		)
 		(pin "1"
-			(uuid "75f926dc-4650-4dc1-b325-07468dd3fe1b")
+			(uuid "42f062fe-038b-46ea-862c-0165f5c39bb6")
+		)
+		(pin "7"
+			(uuid "49dd0388-373d-4a86-909b-c58084e754fa")
+		)
+		(pin "6"
+			(uuid "9744ed5b-dca7-46c8-b4d6-755d46804ab1")
 		)
 		(instances
 			(project "icm20948-breakout"
 				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
-					(reference "R2")
+					(reference "RN1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 153.67 76.2 0)
-		(unit 1)
+		(lib_id "Device:R_Pack04_Split")
+		(at 146.05 74.93 180)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be67c83e-f299-45ac-af64-cfb24e120a09")
-		(property "Reference" "R4"
-			(at 155.448 74.9878 0)
+		(uuid "a68e164a-2dde-4b3a-b73d-06e5f050b4b9")
+		(property "Reference" "RN1"
+			(at 144.018 73.5217 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1413,8 +1595,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 155.448 77.4121 0)
+		(property "Value" "10k"
+			(at 143.764 75.692 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1422,8 +1604,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 151.892 76.2 90)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 148.082 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1432,7 +1614,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 76.2 0)
+			(at 146.05 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,96 +1622,62 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 153.67 76.2 0)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 146.05 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "LCSC" "C29718"
+			(at 146.05 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 146.05 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3205e3dc-0ec7-4415-8a9f-d8b99508bf3f")
+		)
+		(pin "8"
+			(uuid "d7960139-1795-42e4-8be7-72fc2cad483c")
+		)
+		(pin "5"
+			(uuid "a2f8052b-3284-4ec8-b940-36bcb9ddba88")
+		)
+		(pin "4"
+			(uuid "b6613d6c-fd77-421c-834a-5d587c9179a9")
 		)
 		(pin "2"
-			(uuid "18245e4b-d4d9-4b9a-83fe-dde47cfa5baa")
+			(uuid "1e1922c1-65eb-4370-a6b8-1bf1b53c1fd1")
 		)
 		(pin "1"
-			(uuid "cbc3c7bc-84e4-4d79-bfee-ca70fff50120")
+			(uuid "42f062fe-038b-46ea-862c-0165f5c39bb6")
+		)
+		(pin "7"
+			(uuid "49dd0388-373d-4a86-909b-c58084e754fa")
+		)
+		(pin "6"
+			(uuid "9744ed5b-dca7-46c8-b4d6-755d46804ab1")
 		)
 		(instances
 			(project "icm20948-breakout"
 				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 146.05 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d6cac8df-1410-49d5-ae1c-d1fad212160e")
-		(property "Reference" "R3"
-			(at 147.828 74.9878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 147.828 77.4121 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.272 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 146.05 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9614d9b3-4f1e-4d47-9bb6-1598382c769c")
-		)
-		(pin "1"
-			(uuid "b4775fdd-09f9-4bcd-b39d-2fbacf7152e0")
-		)
-		(instances
-			(project "icm20948-breakout"
-				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
-					(reference "R3")
-					(unit 1)
+					(reference "RN1")
+					(unit 2)
 				)
 			)
 		)
@@ -1582,6 +1730,24 @@
 			)
 		)
 		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 137.16 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 137.16 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 137.16 83.82 0)
 			(effects
 				(font
@@ -1664,6 +1830,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e67a18c2-1b70-4aa7-a860-6dd1ca0d88d4")
 		)
@@ -1678,6 +1862,111 @@
 				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
 					(reference "Q1")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 110.49 74.93 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f16c7d87-2e86-4bb5-b04f-f3846a3a3592")
+		(property "Reference" "RN1"
+			(at 108.458 73.5217 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 108.458 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 108.458 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 110.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C29718"
+			(at 110.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 110.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3205e3dc-0ec7-4415-8a9f-d8b99508bf3f")
+		)
+		(pin "8"
+			(uuid "d7960139-1795-42e4-8be7-72fc2cad483c")
+		)
+		(pin "5"
+			(uuid "a2f8052b-3284-4ec8-b940-36bcb9ddba88")
+		)
+		(pin "4"
+			(uuid "b6613d6c-fd77-421c-834a-5d587c9179a9")
+		)
+		(pin "2"
+			(uuid "1e1922c1-65eb-4370-a6b8-1bf1b53c1fd1")
+		)
+		(pin "1"
+			(uuid "42f062fe-038b-46ea-862c-0165f5c39bb6")
+		)
+		(pin "7"
+			(uuid "49dd0388-373d-4a86-909b-c58084e754fa")
+		)
+		(pin "6"
+			(uuid "9744ed5b-dca7-46c8-b4d6-755d46804ab1")
+		)
+		(instances
+			(project "icm20948-breakout"
+				(path "/f8b90807-004a-4781-bf54-49eb85b4b2a1/15729ff6-54da-451a-9d9e-d29719878358"
+					(reference "RN1")
+					(unit 3)
 				)
 			)
 		)

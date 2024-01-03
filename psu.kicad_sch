@@ -817,7 +817,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 63.5) (xy 135.89 66.04)
+			(xy 135.89 62.23) (xy 135.89 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1347,7 +1347,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 135.89 63.5 0)
+		(at 135.89 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1356,7 +1356,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c0d6134-ef74-4c1b-8af3-bae2ca92bc50")
 		(property "Reference" "#FLG03"
-			(at 135.89 61.595 0)
+			(at 135.89 60.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1365,7 +1365,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 135.89 59.3669 0)
+			(at 135.89 58.0969 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1374,7 +1374,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 63.5 0)
+			(at 135.89 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1383,7 +1383,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 63.5 0)
+			(at 135.89 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1392,7 +1392,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 135.89 63.5 0)
+			(at 135.89 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1639,7 +1639,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 133.0452 76.2 0)
 			(effects
 				(font
@@ -1658,6 +1658,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 132.08 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 132.08 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 132.08 72.39 0)
 			(effects
 				(font
@@ -1709,7 +1727,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 124.1552 76.2 0)
 			(effects
 				(font
@@ -1728,6 +1746,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 123.19 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 123.19 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 123.19 72.39 0)
 			(effects
 				(font
@@ -1779,7 +1815,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 98.7552 76.2 0)
 			(effects
 				(font
@@ -1798,6 +1834,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 97.79 72.39 0)
 			(effects
 				(font
@@ -1932,6 +1986,24 @@
 			)
 		)
 		(property "Description" "150mA Low-dropout Voltage Regulator, Vout 1.8V, Vin up to 6V, SOT23-5"
+			(at 111.76 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 111.76 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 111.76 68.58 0)
 			(effects
 				(font
